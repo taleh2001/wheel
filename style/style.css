@@ -1,0 +1,277 @@
+/* Defoult */
+* {
+    padding: 0;
+    margin: 0;
+    background-color: black;
+    font-family: 'Bruno Ace SC', cursive;
+}
+
+
+
+/* Header ////////////////////////////////////*/
+
+
+
+.header__shin--tel{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__icon {
+    display: flex;
+    align-items: center;
+}
+
+.icon {
+    width: 150px;
+}
+
+.header__title {
+    color: white;
+    font-size: 30px;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.tel{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    -webkit-tap-highlight-color: transparent;
+    transition: .3s;
+}
+
+@media (hover :hover){
+    .tel:hover {
+        background-color: white;
+        color: black;
+        border: 2px solid rgb(0, 0, 0);
+        border-radius: 20px;
+    }
+
+/* right item */
+
+.header__item {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.header__item>ul {
+    color: #FFFFFFB3;
+    list-style-type: none;
+    display: flex;
+    font-size: 20px;
+}
+
+.header__item>ul>li {
+    padding-left: 20px;
+
+}
+
+.header__item>ul>li>a {
+    color: #FFFFFFB3;
+    text-decoration: none;
+    transition: .3s;
+
+}
+
+@media (hover :hover){
+    .header__item>ul>li>a:hover {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+
+
+
+
+.header__item--tel {
+    display: flex;
+    align-items: center;   
+}
+
+
+
+
+
+.header__item--burger{
+    display: none;  
+}
+
+
+
+/* Media */
+
+
+
+@media (max-width: 1070px){
+
+    .header__shin--tel{
+        margin-top: -20px; 
+    }
+
+    .header__wrap{
+        /* padding: 10px 0; */
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .header__item--tel{
+        margin-left: 20px;
+    }
+
+    /* .header__shin--tel{
+        display: flex;
+        justify-content: space-between;
+    } */
+
+    .header__icon > a > img{
+        display: none;
+    }
+
+}
+
+@media (max-width: 920px){
+
+    .header.open .header__item{
+        transform: translateY(100%);
+    }
+
+    .header__wrap{
+        padding: 20px 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    .header__item .ul{
+        display: block;
+    }
+
+    
+
+    .header__item--burger{
+        display: flex;
+        width: 35px;
+        color: white;
+
+        -webkit-tap-highlight-color: transparent;     
+    }
+
+    .header__item--burger a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+        z-index: 2;
+        display: flex;
+        justify-content: center;
+        width: 50px;
+        margin-top: -20px;
+               
+        -webkit-tap-highlight-color: transparent;       
+    }
+
+    .header__item {
+        position: absolute;
+        background-color: white;
+        padding: 85px 20px 20px 20px;
+        right: -20px;
+        top: -290px;
+        width: 250px;
+        transition: transform .5s;
+        
+    }
+
+    .ul > li{
+        background-color: white;
+    }
+
+    .header__item>ul>li>a {
+        font-size: 25px;
+        color: black;
+        background-color: white;
+        display: block;
+        padding: 10px 0;
+
+        -webkit-tap-highlight-color: transparent;
+    }
+
+    
+
+
+
+    
+
+    
+
+    
+}
+
+@media (max-width: 580px){
+    .header__wrap{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .header__item--tel{
+        margin: 0;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    .header__item--burger{
+        display: flex;
+        width: 50px;
+        /* margin-left: -20px; */
+    }
+
+    .header__item--burger a{
+        
+        /* float: right; */
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+    }
+
+    .header__item--wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .header__shin--tel{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__wrap{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .icon{
+        text-align: right;
+        /* margin-left: -10px; */
+        /* padding-left: -10px; */
+    }
+
+   
+
+
+    
+}
+
+/* Content 1 */
+
+
+
+/* Footer */
